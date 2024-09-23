@@ -30,11 +30,24 @@ public class Main3 {
         for(int i = 0; i <= 2; i++){
             coffees3[i] = coffees4[i];
             System.out.println(coffees3[i]);
+            System.out.println(coffees4==coffees3);
         }
-        if(coffees3 == coffees4){
-            System.out.println("true");
-        }else{
-            System.out.println("false");
+//        for(int i = 0; i <= coffees4.length; i++){
+//            coffees3[i] = coffees4[i];
+//            System.out.println(coffees3[i]==coffees4[i]);
+//        }
+//        if(coffees3 == coffees4){
+//            System.out.println("true");
+//        }else{
+//            System.out.println("false");
+//        }
+        int[][] cp = new int[3][3];
+        int[][] cp2 ={{1,2,3}, {4,5,6}, {7,8,9}};
+        for(int i = 0; i <= 2; i++) {
+            for (int j = 0; j <= 2; j++) {
+                System.out.print(cp2[i][j]);
+            }
+            System.out.println();
         }
     }
 }
